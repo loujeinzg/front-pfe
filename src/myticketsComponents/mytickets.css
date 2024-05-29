@@ -1,0 +1,183 @@
+.header{
+  height: 200px;
+  width: 100%;
+  background-color : #E9EEF6;
+  padding-top: 50px;
+}
+
+.card-container{
+  height: 300px;
+  width: 300px;
+  box-shadow: 0px 3px 50px #A5A5A5;
+}
+
+.card-wrapper{
+  /* width: 270px;  */
+  height: auto; 
+  box-shadow: 0px 3px 50px #A5A5A5;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Added margin bottom to create space between cards */
+}
+.Nametask{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.description {
+  width: 200px; /* Adjust the width according to your layout */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-top{
+  width: 100%;
+  height: 2px;
+}
+
+.task-holder {
+  width: 100%;
+  height: 98%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr 0.5fr 0.2fr;
+  align-items: center;
+  justify-items: center; /* Center items horizontally */
+  gap: 2px;
+}
+
+.card-header{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 80px;
+  height: 30px;
+  padding: 2px 2px !important;
+  text-align: center;
+}
+
+.task-container{
+  height: 100%;
+  width: 100%;
+  display: block;
+  flex-wrap: wrap;
+  background-color: #F6F7F8;
+  padding : 40px 100px;
+}
+
+.decription{
+  padding-left: 200px;
+  max-width: 400px;
+}
+
+.status-select {
+  margin-left: 200px; /* Push the status selector to the right */
+}
+
+.status-select select {
+  background-color: transparent;
+  color: black;
+  border: none;
+  /* border-bottom: 2px solid; */
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+/* .status-select select option {
+  color: black;
+} */
+
+/* Define colors for different statuses */
+/* .status-select select option[value="To Do"] {
+  color: red;
+}
+
+.status-select select option[value="In Progress"] {
+  color: orange;
+}
+
+.status-select select option[value="Done"] {
+  color: rgb(12, 221, 12);
+} */
+
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.filter-item:last-child {
+  margin-right: 0;
+}
+
+/* Styling filter labels */
+.filter-item label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-item input,
+.filter-item select,
+.filter-item button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+.todo-list-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.header-item {
+  flex: 1;
+  text-align: center;
+}
+
+.filter-item button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.filter-item button:hover {
+  background-color: #0056b3;
+}
+
+.filter-item select {
+  width: 150px;
+}
+
+
+.todo-list-header {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr 0.5fr 0.2fr;
+  gap: 2px;
+}
+
+.header-item {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
